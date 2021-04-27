@@ -1,0 +1,225 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  /*  position: relative; */
+  display: flex;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  background: #fe4e30; /* backround bergunana untuk set warna latar container kita */
+  height: 68px; /* tinggi */
+}
+
+nav > img {
+  height: 33px;
+  width: 49px;
+  align-self: center;
+}
+
+nav > div {
+  align-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+nav > div > a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+nav > div > a:hover {
+  cursor: pointer;
+}
+
+.hero-container {
+  height: 85vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-container > .hero-left-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container > .hero-right-container {
+  background: green;
+  width: 50%;
+}
+
+.hero-container > .hero-left-container > div {
+  width: 70%;
+}
+
+.hero-container > .hero-right-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.hero-highlight {
+  color: #fe4e30;
+  padding: 5px 10px;
+  background: #f6e4e1;
+  font-size: 13px;
+  font-weight: bolder;
+  width: fit-content;
+}
+
+.hero-title {
+  font-size: 53px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero-text {
+  margin-bottom: 30px;
+  border-left: 3px solid #f7b731;
+  padding-left: 10px;
+}
+
+.btn-primary {
+  background: #fe4e30;
+  height: 48px;
+  padding: 0 20px; /* atas bawah kiri kanan */
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  background: #da2a0b;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 100px 100px;
+  gap: 20px;
+  position: block;
+}
+
+.card {
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.card > .card-body {
+  padding: 10px;
+}
+
+.card > .card-body > h3 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card > .card-body > p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* media query */
+@media only screen and (max-width: 360px) {
+  nav {
+    padding: 0 5%;
+  }
+
+  nav > div {
+    display: none;
+  }
+
+  .hero-container {
+    height: 100%;
+  }
+
+  .hero-container > .hero-left-container {
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+
+  .hero-container > .hero-right-container {
+    width: 100%;
+  }
+
+  .hero-container > div {
+    width: 100%;
+  }
+
+  .hero-highlight {
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    border-left: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-container {
+    grid-template-columns: 1fr;
+    padding: 20px 5%;
+  }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 768px) {
+  .content-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* nav > img {
+  height: 33px;
+  width: 49px;
+  position: absolute;
+  top: 18px;
+  left: 70px;
+}
+
+nav > div {
+  position: absolute;
+  right: 70px;
+  top: 22px;
+}
+
+nav > div > a {
+  margin-right: 10px;
+  color: white;
+  font-size: 18px;
+}
+ */
