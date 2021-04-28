@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
+
 </head>
 
 <body>
@@ -30,7 +31,7 @@
         <div class="hero-left-container">
             <div>
                 <h3 class="hero-highlight">Masuk ke Bootcamp Coding Terbaik</h3>
-                <h1 class="hero-title">Kelas Persiapan Bootcamp</h1>
+                <h1 class="hero-title">Kelas Persiapan Bootcamp Ganti</h1>
                 <p class="hero-text">
                     4 minggu kelas persiapan bootcamp, membantumu untuk persiapan test masuk bootcamp dumbways atau
                     bootcamp lainnya bagi kamu yang belum mengerti coding
@@ -44,7 +45,16 @@
             <img src="hero.webp" alt="hero-image">
         </div>
     </section>
-    <section class="content-container">
+    <section class="content-container" id="contentContainer">
+        <div class="card">
+            <img src="https://storage.dumbways.microgen.id/microgen-lms1586588410220/course/640ag5ra2k5HTML%20&%20CSS.webp"
+                alt="gambar">
+            <div class="card-body">
+                <h3>Judul</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
         <div class="card">
             <img src="https://storage.dumbways.microgen.id/microgen-lms1586588410220/course/640ag5ra2k5HTML%20&%20CSS.webp"
                 alt="gambar">
@@ -127,12 +137,106 @@
             </div>
         </div>
     </section>
-    <section>
-        ini adalah what your learn section
+    <section class="contact-me-container">
+        <form>
+            <h3>FORM SECTION</h3>
+            <div>
+                <label style="display: block;">Input Your Name</label>
+                <input class="custom-input" type="text" placeholder="Please input your Name" required />
+            </div>
+            <div>
+                <label style="display: block;">Input Your Phone Number</label>
+                <input class="custom-input" type="number" placeholder="Please input your Number" required />
+            </div>
+            <div>
+                <label style="display: block;">Input Your Email</label>
+                <input class="custom-input" type="email" placeholder="Please input your Email" />
+            </div>
+            <div>
+                <label style="display: block;">Input Your Password</label>
+                <input class="custom-input" type="password" placeholder="Please input your Password" />
+            </div>
+            <div>
+                <label style="display: block;">Input Your Description</label>
+                <textarea class="custom-textarea" rows="5"></textarea>
+            </div>
+            <div>
+                <label style="display: block;">Select Your Gender</label>
+                <select class="custom-input">
+                    <option value="Famale">Famale</option>
+                    <option value="Male">Male</option>
+                </select>
+            </div>
+            <div>
+                <label style="display: block;">Select Your Marital status</label>
+                <input type="radio" name="maritalStatus" value="Married"> Married
+                <input type="radio" name="maritalStatus" value="Not Married"> Not Married
+            </div>
+            <div>
+                <label style="display: block;">Select Your Hobbies</label>
+                <input type="checkbox" name="hobbies" value="Swimming"> Swimming
+                <input type="checkbox" name="hobbies" value="Gaming"> Gaming
+                <input type="checkbox" name="hobbies" value="Farming"> Farming
+                <input type="checkbox" name="hobbies" value="Driving"> Driving
+            </div>
+            <div>
+                <label style="display: block;">Select Your Birth Date</label>
+                <input class="custom-input" type="date">
+            </div>
+            <div>
+                <button type="submit" class="btn-secondary">Simpan Data</button>
+            </div>
+        </form>
+
     </section>
-    <section>
-        ini adalah footer section
+
+    <section class="table-container">
+        <table class="custom-table" width="60%">
+            <thead style="background: green;color: white;">
+                <tr style="height: 40px;">
+                    <th>No</th>
+                    <th width="50%">Nama</th>
+                    <th>Alamat</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody style="text-align: center;">
+                <tr>
+                    <td>1</td>
+                    <td colspan="2">Ainur</td>
+                    <td>Sedang Kuliah</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Wisnu</td>
+                    <td>Bali</td>
+                    <td>Sedang Bekerja</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td rowspan="2">Wahyu</td>
+                    <td>Padang</td>
+                    <td>Sedang Menikah</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Padang</td>
+                    <td>Sedang Menikah</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Wahyu</td>
+                    <td>Padang</td>
+                    <td>Sedang Menikah</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
+    <section class="perulangan-container" id="perulanganContent">
+
+
+    </section>
+    <script src="looping.js"></script>
 </body>
 
 </html>

@@ -102,9 +102,26 @@ nav > div > a:hover {
   background: #da2a0b;
 }
 
+.btn-secondary {
+  width: 100%;
+  background: white;
+  height: 48px;
+  padding: 0 20px; /* atas bawah kiri kanan */
+  color: #fe4e30;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-secondary:hover {
+  cursor: pointer;
+  background: #ddd9d8;
+}
+
 .content-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   padding: 100px 100px;
   gap: 20px;
   position: block;
@@ -138,6 +155,69 @@ nav > div > a:hover {
 
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.contact-me-container {
+  background: #fe4e30;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.contact-me-container > form > h3 {
+  text-align: center;
+  color: white;
+}
+
+.custom-input {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  font-size: 18px;
+  border: 2px solid #f7b731;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.custom-textarea {
+  height: 100%;
+  line-height: 30px;
+  width: 100%;
+  font-size: 18px;
+  border: 2px solid #f7b731;
+  border-radius: 5px;
+}
+
+.contact-me-container label {
+  color: whitesmoke;
+}
+
+.table-container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+}
+
+.custom-table {
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid rgb(163, 163, 163);
+}
+
+.custom-table tr:nth-child(even) {
+  background-color: #cfcfcf;
+}
+
+.custom-table > tbody > tr:hover {
+  background-color: #9e9e9e;
   cursor: pointer;
 }
 
