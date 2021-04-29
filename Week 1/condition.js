@@ -156,3 +156,27 @@ condition1
 */
 
 console.log(status);
+
+function ganjilGenap(numb) {
+  if (numb % 2 == 0) {
+    return "genap";
+  } else {
+    return "ganjil";
+  }
+}
+
+console.log(ganjilGenap(2));
+console.log(ganjilGenap(1));
+
+const bilangan = [1, 2, 3, 4, 5, 6];
+
+let temp = [];
+for (i = 0; i < bilangan.length; i++) {
+  if (ganjilGenap(bilangan[i]) === "genap") {
+    temp.push("Bilangan Genap");
+  } else {
+    temp.push("Bilangan Ganjil");
+  }
+}
+
+console.log(temp);
