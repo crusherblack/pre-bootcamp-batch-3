@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="lampu-container">
+            <h3>Lampu Merah</h3>
+            <div class="lampu-lalu-lintas-container">
+                <div class="round red" onclick="lampuLaluLintas('merah')">Merah</div>
+                <div class="round yellow" onclick="lampuLaluLintas('kuning')">Kuning</div>
+                <div class="round green" onclick="lampuLaluLintas('hijau')">Hijau</div>
+            </div>
+            <div id="output"></div>
+            <div>
+                <div>
+                    <h3 style="text-align: center;">Gerbang Logika AND</h3>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Condtion A</th>
+                                <th>Condtion B</th>
+                                <th>Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>true</td>
+                                <td>true</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>true</td>
+                                <td>false</td>
+                                <td>false</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>false</td>
+                                <td>true</td>
+                                <td>false</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>false</td>
+                                <td>false</td>
+                                <td>false</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h3 style="text-align: center;">Gerbang Logika OR</h3>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Condtion A</th>
+                                <th>Condtion B</th>
+                                <th>Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>true</td>
+                                <td>true</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>true</td>
+                                <td>false</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>false</td>
+                                <td>true</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>false</td>
+                                <td>false</td>
+                                <td>false</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="condition.js"></script>
+</body>
+
+</html>
