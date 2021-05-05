@@ -157,6 +157,7 @@ condition1
 
 console.log(status);
 
+//modulo, modulus, mod
 function ganjilGenap(numb) {
   if (numb % 2 == 0) {
     return "genap";

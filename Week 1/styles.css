@@ -3,7 +3,8 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background: rgb(216, 216, 216);
+  /* background: rgb(216, 216, 216); */
+  background: white;
 }
 
 .lampu-container {
