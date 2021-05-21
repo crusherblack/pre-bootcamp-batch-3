@@ -236,3 +236,60 @@ helloName("nurlela")
     return helloName("Andi");
   })
   .then((data) => console.log(data));
+
+//Promise all
+//Promise all berfungsi untuk menjalakan promise secara paralel tapi dia menunggu seluruh proses selesai baru memberika output yang diinginkan
+
+/* const doFetch = (url) => fetch(url).then((result) => result.json());
+let urls = [
+  "https://jsonplaceholder.typicode.com/posts/10",
+  "https://jsonplaceholder.typicode.com/posts/8",
+  "https://jsonplaceholder.typicode.com/posts/9",
+  "https://jsonplaceholder.typicode.com/posts/7",
+];
+
+let promises = [];
+urls.map((url) => {
+  promises.push(doFetch(url));
+});
+Promise.all(promises).then((results) => console.log(results)); */
+
+const getAllPosts = async () => {
+  const fetchData = async (url) => {
+    const response = await fetch(url);
+    return await response.json();
+  };
+
+  const getPosts = [
+    fetchData("https://jsonplaceholder.typicode.com/posts/10"),
+    fetchData("https://jsonplaceholder.typicode.com/posts/8"),
+    fetchData("https://jsonplaceholder.typicode.com/posts/9"),
+    fetchData("https://jsonplaceholder.typicode.com/posts/7"),
+  ];
+
+  const result = await Promise.all(getPosts);
+
+  console.log(result);
+};
+
+getAllPosts();
+
+//Promise Race
+
+/* let participant1 = new Promise((resolve) =>
+  setTimeout(resolve, 50, "Participant 1")
+);
+let participant2 = new Promise((resolve) =>
+  setTimeout(resolve, 20, "Participant 2")
+);
+let participant3 = new Promise((resolve) =>
+  setTimeout(resolve, 40, "Participant 3")
+);
+let participant4 = new Promise((resolve) =>
+  setTimeout(resolve, 10, "Participant 4")
+);
+
+Promise.race([participant1, participant2, participant3, participant4])
+  .then((val) => console.log("Finis", val))
+  .catch((err) => console.log("the race was stopped because of : ", eer));
+ */
